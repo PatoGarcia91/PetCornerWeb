@@ -1,0 +1,78 @@
+@use 'variables' as vars;
+@use 'animaciones' as anima;
+
+body{
+
+    .navbar{
+        color: vars.$fuente-violeta; 
+        background-color: vars.$color-nav;
+        a{
+            color: vars.$fuente-violeta; 
+            &:hover{
+                color:vars.$fuente-naranja;
+                animation-name: pulse;
+                animation-duration: 1s;
+            }
+        }
+        .logo{
+            max-width: 10%;
+        }
+    
+    }
+    main{
+        background-color: vars.$color-fondo;
+        .imgTexto{
+            display: flex;
+            align-items: center;
+            margin-bottom: 3%;            
+            img{
+                max-width: 350px;
+                height: auto;
+                margin-right: 1%;
+            }
+        }
+        .botonesNav{
+            align-self: end;
+        }
+        // R E V I S A R   D E S D E   A C A - - - - - - - - - - - - - - - - - - - - 
+        .suggestion-tag {
+            background: rgba(240, 240, 240, 0.9);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+        }
+        
+        .suggestion-tag:hover {
+            background: #764ba2;  
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 600px) {
+            .suggestion-tag {
+                font-size: 13px;
+                padding: 8px 15px;
+            }
+        }
+        //H A S T A   A C A - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        .cardsPcp{
+            margin-top: 3%; 
+            padding-top: 1rem;       
+            background-color: vars.$color-nav;
+            max-height: 28rem;
+            overflow: auto;
+        }
+
+        section{
+            width: 60%;
+            background-color: gray;
+            
+        }
+    }
+} 

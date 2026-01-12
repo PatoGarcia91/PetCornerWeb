@@ -1,0 +1,10 @@
+@use 'variables' as vars;
+
+@keyframes anima-link{
+    from{
+        background-color: vars.$fuente-violeta;
+    }
+    to{
+        background-color: vars.$fuente-naranja;
+    }
+}
